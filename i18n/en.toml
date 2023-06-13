@@ -54,7 +54,7 @@ other = "I agree to data processing per ISRG's"
 other = "Privacy policy"
 
 [form_field_privacy_policy_link]
-other = "link.com/privacy-policy"
+other = "https://www.abetterinternet.org/privacy-policy/"
 
 [form_field_submit]
 other = "Submit"
