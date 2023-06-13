@@ -1,0 +1,21 @@
+<section class="">
+  <div class="col-span-3">
+    <h2 class="type-hero-title" >
+      {{ i18n "venue_eyebrow" }}
+    </h2>
+  </div>
+
+  <div class="col-span-3 md:col-span-2">
+    <h3 class="type-venue-name" >
+      {{ i18n "venue_name" }}
+    </h3>
+    <p class="type-venue-name" >
+      {{ i18n "venue_city" }}
+    </p>
+    <div class="mt-6 type-venue-description" >
+      {{ i18n "venue_description" | markdownify }}
+    </div>
+
+    <a class="type-venue-link" href="{{ i18n "venue_googlemaps_url" }}" target="_blank">{{ i18n "venue_address" }}</a>
+  </div>
+</section>

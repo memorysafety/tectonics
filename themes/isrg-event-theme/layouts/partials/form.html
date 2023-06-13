@@ -1,0 +1,193 @@
+<div id="form-wrapper" class="sm:sticky top-0 py-10">
+<section id="form" class="sm:border-r border-white sm:pr-20">
+  <h2 class="type-hero-title mb-[14px]" > {{ i18n "form_title" }} </h2>
+
+
+  <form action="{{ i18n "form_post_endpoint" }}" id="registrationForm">
+    <div style="position:absolute; left:-9999px; top: -9999px;">
+      <label for="pardot_extra_field">Comments</label>
+      <input type="text" id="pardot_extra_field" name="pardot_extra_field">
+  </div>
+    <p class="type-hero-description mt-2" > {{ i18n "form_description" | markdownify }} </p>
+
+    <div class="mt-4">
+
+      <input type="text" id="First Name" name="First Name" class="ui-form-text-field" required />
+      <label for="fname" class="type-form-label" >{{ i18n "form_field_firstname" }}</label >
+    </div>
+    <div class="mt-4">
+
+      <input type="text" id="Last Name" name="Last Name" class="ui-form-text-field" required />
+      <label for="lname" class="type-form-label" >{{ i18n "form_field_lastname" }}</label >
+    </div>
+    <div class="mt-4">
+
+      <input type="email" id="email" name="email" class="ui-form-text-field" required />
+      <label for="email" class="type-form-label" >{{ i18n "form_field_email" }}</label >
+    </div>
+    <div class="mt-4">
+
+      <input type="text" id="Company" name="Company" class="ui-form-text-field" />
+      <label for="company" class="type-form-label" >{{ i18n "form_field_company" }}</label >
+      <span class="type-form-optional" >{{ i18n "form_field_optional" }}</span >
+    </div>
+    <div class="mt-4">
+      <input type="checkbox" id="agree" required />
+      <label for="agree" class="ml-2 type-form-label font-dmsans font-normal text-sm leading-4 tracking-[0.21em]" >{{ i18n "form_field_data_processing" }}
+        <a href="{{ i18n "form_field_privacy_policy_link" }}" class="type-venue-link" >{{ i18n "form_field_privacy_policy_text" }}</a>
+        </label>
+    </div>
+    <div id="errors" class="mt-4 text-red-600" style="display: none"></div>
+
+    <div class="my-4">
+      <button type="submit" class="btn-primary mb-5"> {{ i18n "form_field_submit" }} </button>
+      <button type="button" onClick="triggerTestError()" class="btn-primary ml-5 mb-5">Trigger error </button>
+      <button type="button" onClick="showThankYouMessage()" class="btn-primary ml-5 mb-5">Trigger submission </button>
+    </div>
+
+  </form>
+
+  <div id="thank-you-container" class="hidden">
+    <div class="type-heading-2 mb-5">{{ i18n "form_thank_you_title" }} </div>
+    <div class="type-hero-description mb-[25px]">{{ i18n "form_thank_you_description" }} </div>
+    <a href="/ical/tectonics-event.ics" download class="btn-primary">{{ i18n "form_thank_you_calendar_button" }}</a>
+  </div>
+</section>
+
+<script>
+
+document.getElementById('First Name').value = "Testfname";
+    document.getElementById('Last Name').value = "Testlname"
+    document.getElementById('email').value = "testemail@testemail.com"
+    document.getElementById('Company').value = "Test Company"
+     document.getElementById('agree').checked = true
+
+
+
+  const form = document.getElementById("registrationForm");
+
+  function triggerTestError() {
+    showError('{{ i18n "form_validation_error_email" }}');
+  }
+
+  form.addEventListener('submit', function(event) {
+    validateForm(event);
+  });
+
+  function validateForm(event) {
+    event.preventDefault();
+
+    // Get form values
+    const firstName = document.getElementById('First Name').value;
+    const lastName = document.getElementById('Last Name').value;
+    const email = document.getElementById('email').value;
+    const agree = document.getElementById('agree').checked;
+
+    // Check for empty fields
+    if (!firstName || !lastName) {
+      showError('{{ i18n "form_validation_error_name" }}');
+      return;
+    }
+    if (!email) {
+      showError('{{ i18n "form_validation_error_email" }}');
+      return;
+    }
+    if (!agree) {
+      showError('{{ i18n "form_validation_error_agree" }}');
+      return;
+    }
+
+    // Validate email
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      showError('Please provide a valid email.');
+      return;
+    }
+
+    // If everything is valid, run the success function
+    formSuccess();
+
+  // Add submit event listener
+}
+
+function formSuccess() {
+  // Function to handle successful form submission
+  console.log('Form submitted successfully.');
+  submitToDB();
+}
+
+
+
+  function submitToDB() {
+    const formData = new FormData(form);
+    const formEndpoint = form.getAttribute("action");
+
+    fetch(formEndpoint, {
+      method: "POST",
+      body: formData,
+      mode: 'no-cors'
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          showThankYouMessage();
+        } else {
+          showError(data.message);
+        }
+      })
+      .catch((error) => {
+        showError("An error occurred while submitting the form.");
+      });
+  }
+
+  function showThankYouMessage() {
+    const formContainer = document.getElementById("registrationForm");
+    const thankYouMessage = document.getElementById("thank-you-container");
+
+    // Using Animate.css
+    formContainer.classList.add("animate__animated", "animate__fadeOut");
+
+    setTimeout(function(){
+      formContainer.innerHTML = "";
+      thankYouMessage.classList.add("animate__animated", "animate__fadeIn");
+      thankYouMessage.classList.remove("hidden");
+    },350)
+
+
+  }
+
+  function showError(message) {
+    const errorMessage = document.getElementById("errors");
+    errorMessage.innerText = message;
+    errorMessage.style.display = "block";
+  }
+
+
+
+
+  window.addEventListener('scroll', function() {
+    const form = document.querySelector('#form');
+    const saveTheDateBar = document.querySelector('#save-the-date-bar');
+
+    // Get the position of the form from the top of the page
+    const formPosition = form.getBoundingClientRect().top + window.pageYOffset + 20;
+
+    // Get the current scroll position
+    const scrollPosition = window.pageYOffset;
+
+    // Get the viewport height
+    const viewportHeight = window.innerHeight;
+
+    // Hide the bar if the form is in view
+    if (scrollPosition + viewportHeight > formPosition) {
+      saveTheDateBar.classList.remove("opacity-100");
+      saveTheDateBar.classList.add("opacity-0", "pointer-events-none");
+    } else {
+      saveTheDateBar.classList.remove("opacity-0", "pointer-events-none");
+      saveTheDateBar.classList.add("opacity-100");
+    }
+});
+
+
+</script>
+</div>

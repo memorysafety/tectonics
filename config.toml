@@ -1,2 +1,6 @@
 baseURL = "https://tectonics.memorysafety.org/"
 languageCode = "en-us"
+theme = "isrg-event-theme"
+
+[params]
+# cssOverrides = ["css/event-specific-overrides.css"] # if needed

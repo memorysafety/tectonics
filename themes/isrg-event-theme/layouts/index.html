@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body class="bg-dark-green text-white">
+    {{- partial "save-the-date-bar.html" . -}}
+    {{- partial "scroll-indicator-bar.html" . -}}
+    <div class="min-h-screen flex flex-col">
+      {{- partial "hero.html" . -}}
+      <div class="bg-dark-green z-20 translate-y-[-10px]">
+        <div class="container ">
+          <div class="flex flex-col-reverse md:flex-row px-5">
+            <div class="basis-1/2">{{- partial "form.html" . -}}</div>
+            <div class="basis-1/2 md:pl-20 py-10">
+              <div class="flex flex-col gap-[120px] pb-[120px] overflow-auto">
+
+                <div class="flex flex-col gap-[12px]">
+                  <div class="flex flex-row gap-[12px] items-end">
+                    <div class="basis-[56%] pb-5">
+                      {{- partial "venue.html" . -}}
+                    </div>
+                    <div class="basis-[44%] self-stretch">
+                      <img src="/images/venue-1.jpg" class="rounded-[60px] h-full w-full object-cover">
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[12px]">
+                    <div class="basis-[100%]">
+                      <img src="/images/venue-2.jpg" class="rounded-[37px] w-full">
+                    </div>
+                  </div>
+                  <div class="flex flex-row gap-[12px]">
+                    <div class="basis-[30%]">
+                      <img src="/images/venue-3.jpg" class="rounded-[56px] w-full">
+                    </div>
+                    <div class="basis-[20%]">
+                      <img src="/images/venue-4.jpg" class="rounded-[45px] w-full">
+                    </div>
+                    <div class="basis-[50%]">
+                      <img src="/images/venue-5.jpg" class="rounded-[65px] w-full">
+                    </div>
+                  </div>
+                </div>
+
+
+                {{- partial "speakers.html" . -}}
+                {{- partial "schedule.html" . -}} {{- partial "sponsors.html" .
+                -}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

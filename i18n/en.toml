@@ -1,0 +1,112 @@
+[color_text]
+other = "#FFFFFF"
+
+[color_background]
+other = "#01282A"
+
+[hero_eyebrow]
+other = "Join us for"
+
+[hero_title]
+other = "Tectonics"
+
+[hero_date]
+other = "November 2"
+
+[hero_venue]
+other = "San Francisco"
+
+[hero_subhead]
+other = "A Shift Towards Memory Safe Critical Infrastructure"
+
+[hero_description]
+other = """
+In relatively short order, the topic of memory safety has gained momentum from being an “objectively crazy” problem to one that isn’t only worth solving, but necessary. Join ISRG as we bring together a small group of leaders paving the way towards a more memory safe Internet. 
+
+In a day-long convening, practitioners, policy-makers, and technical leaders will gather to discuss a range of topics related to memory safety.
+"""
+
+[form_title]
+other = "Save the date"
+
+[form_description]
+other = "Sign up here to get an email when registration opens. Space at this event will be limited, so we will do our best to accommodate interest!"
+
+[form_field_firstname]
+other = "First Name"
+
+[form_field_lastname]
+other = "Last Name"
+
+[form_field_email]
+other = "Email"
+
+[form_field_company]
+other = "Organization"
+
+[form_field_optional]
+other = "(optional)"
+
+[form_field_data_processing]
+other = "I agree to data processing per ISRG's"
+
+[form_field_privacy_policy_text]
+other = "Privacy policy"
+
+[form_field_privacy_policy_link]
+other = "link.com/privacy-policy"
+
+[form_field_submit]
+other = "Submit"
+
+[form_thank_you_title]
+other = "Thank you for your interest in joining us at Tectonics"
+
+[form_thank_you_description]
+other = "We'll begin sending invites in the coming weeks"
+
+[form_thank_you_calendar_button]
+other = "Download .ics file"
+
+[form_validation_error_name]
+other = "Please enter your first and last name."
+
+[form_validation_error_email]
+other = "Please provide a valid email."
+
+[form_validation_error_agree]
+other = "You must agree to ISRG's terms to submit."
+
+[form_post_endpoint]
+other = "http://outreach.abetterinternet.org/l/1011011/2023-06-07/hbhj"
+
+[venue_eyebrow]
+other = "Venue"
+
+[venue_name]
+other = "Hotel Kabuki"
+
+[venue_city]
+other = "San Francisco"
+
+[venue_description]
+other = """
+Blending modern Asian and Western influences, Hotel Kabuki offers a unique neighborhood experience in the heart of San Francisco.
+
+With its stunning Asian-influenced design, Hotel Kabuki wraps guests in comfort and exceptional service
+"""
+
+[venue_address]
+other = "1625 POST STREET, SAN FRANCISCO, CALIFORNIA 94115"
+
+[venue_googlemaps_url]
+other = "https://www.google.com/maps/place/Hotel+Kabuki+-+JDV+by+Hyatt/@37.7855773,-122.4289389,15z/data=!4m2!3m1!1s0x0:0xf94d52700baf31ae?sa=X&ved=2ahUKEwiPz9ep44v_AhVBADQIHfDdC-cQ_BJ6BAh3EAc"
+
+[speakers_title]
+other = "Keynotes"
+
+[schedule_title]
+other = "Schedule"
+
+[sponsor_title]
+other = "Sponsors"
