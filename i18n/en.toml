@@ -11,19 +11,19 @@ other = "Join us for"
 other = "Tectonics"
 
 [hero_date]
-other = "November 2"
+other = "November 2 2023"
 
 [hero_venue]
 other = "San Francisco"
 
 [hero_subhead]
-other = "A Shift Towards Memory Safe Critical Infrastructure"
+other = "A Fundamental Shift Toward <span class='whitespace-nowrap'>Memory Safety</span>"
 
 [hero_description]
 other = """
-In relatively short order, the topic of memory safety has gained momentum from being an “objectively crazy” problem to one that isn’t only worth solving, but necessary. Join ISRG as we bring together a small group of leaders paving the way towards a more memory safe Internet. 
+In relatively short order, the topic of memory safety has gained momentum from being an “objectively crazy” problem to one that is being solved. Join ISRG as it brings together a small group of leaders paving the way towards a more memory safe Internet.
 
-In a day-long convening, practitioners, policy-makers, and technical leaders will gather to discuss a range of topics related to memory safety.
+In a day-long convening, practitioners, policy-makers, and technical leaders will gather to not only discuss a range of topics related to accelerating memory safety, but will use structured time to set a clear, actionable path for moving our work forward.
 """
 
 [form_title]

@@ -21,9 +21,9 @@
     </div>
     <div class="type-hero-eyebrow">{{ i18n "hero_venue" }}</div>
 
-    <h3 class="type-heading-2 mt-[40px]">{{ i18n "hero_subhead" }}</h3>
+    <h3 class="type-heading-2 mt-[40px]  md:pr-10 md:max-w-[50%]">{{ i18n "hero_subhead" | safeHTML }}</h3>
 
-    <div class="type-hero-description mt-10">
+    <div class="type-hero-description mt-10 md:pr-10  md:max-w-[50%]">
       {{ i18n "hero_description" | markdownify }}
     </div>
   </div>

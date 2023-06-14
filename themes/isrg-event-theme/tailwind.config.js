@@ -4,6 +4,9 @@ module.exports = {
     // enabled: process.env.HUGO_ENVIRONMENT === 'production',
     enabled: true,
     content: ["./layouts/**/*.html", "./partials/**/*.html"],
+    safelist: [
+      "whitespace-nowrap",
+    ]
   },
   theme: {
     extend: {
