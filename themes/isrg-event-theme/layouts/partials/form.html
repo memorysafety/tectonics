@@ -1,3 +1,5 @@
+<a class="offset-scroll-position-for-fixed-header" name="save-the-date"></a>
+<section>
 <div id="form-wrapper" class="sm:sticky top-0 py-10">
 <section id="form" class="sm:border-r border-white sm:pr-20">
   <h2 class="type-hero-title mb-[14px]" > {{ i18n "form_title" }} </h2>
@@ -163,30 +165,6 @@ function formSuccess() {
   }
 
 
-
-
-  window.addEventListener('scroll', function() {
-    const form = document.querySelector('#form');
-    const saveTheDateBar = document.querySelector('#save-the-date-bar');
-
-    // Get the position of the form from the top of the page
-    const formPosition = form.getBoundingClientRect().top + window.pageYOffset + 20;
-
-    // Get the current scroll position
-    const scrollPosition = window.pageYOffset;
-
-    // Get the viewport height
-    const viewportHeight = window.innerHeight;
-
-    // Hide the bar if the form is in view
-    if (scrollPosition + viewportHeight > formPosition) {
-      saveTheDateBar.classList.remove("opacity-100");
-      saveTheDateBar.classList.add("opacity-0", "pointer-events-none");
-    } else {
-      saveTheDateBar.classList.remove("opacity-0", "pointer-events-none");
-      saveTheDateBar.classList.add("opacity-100");
-    }
-});
 
 
 </script>

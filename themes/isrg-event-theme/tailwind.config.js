@@ -3,7 +3,7 @@ module.exports = {
   purge: {
     // enabled: process.env.HUGO_ENVIRONMENT === 'production',
     enabled: true,
-    content: ["./layouts/**/*.html", "./partials/**/*.html"],
+    content: ["./layouts/**/*.html"],
     safelist: [
       "whitespace-nowrap",
     ]

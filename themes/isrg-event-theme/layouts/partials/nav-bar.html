@@ -1,0 +1,92 @@
+<nav id="navbar" class="transition-opacity pointer-events-none opacity-0 bg-gradient-to-t from-transparent to-dark-green to-20% text-white z-50 fixed top-0 w-full">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 justify-between">
+        <div class="flex">
+          <div class="-ml-2 mr-2 flex items-center md:hidden">
+            <button id="hamburger" type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg id="hamburger-to-open" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <svg id="hamburger-to-close" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-shrink-0 items-center">
+            <a href="#tectonics">
+            <img
+                class="block h-6"
+                src="/images/prossimo-logo.png"
+                alt="Prossimo Logo"
+              />
+            </a>
+          </div>
+
+        </div>
+        <div class="hidden md:ml-6 md:flex md:space-x-8">
+          <a href="#venue" class="top-nav-item">Venue</a>
+          <a href="#keynotes" class="top-nav-item">Keynotes</a>
+          <a href="#schedule" class="top-nav-item">Schedule</a>
+          <a href="#sponsors" class="top-nav-item">Sponsors</a>
+        </div>
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <a id="navbar-save-the-date" href="#save-the-date" class="relative inline-flex items-center btn-primary">
+              Save the Date
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="md:hidden" id="mobile-menu">
+      <div class="space-y-1 pb-3 pt-2">
+        <a href="#venue" class="hamburger-nav-item">Venue</a>
+        <a href="#keynotes" class="hamburger-nav-item">Keynotes</a>
+        <a href="#schedule" class="hamburger-nav-item">Schedule</a>
+        <a href="#sponsors" class="hamburger-nav-item">Sponsors</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+
+    window.addEventListener('scroll', function() {
+        checkNavBar();
+    });
+
+    function checkNavBar() {
+      const nav = document.querySelector('#navbar');
+      const offset = 60;
+
+      // Show the nav unless at the top of the page
+      if (window.pageYOffset > offset) {
+          nav.classList.remove('opacity-0', 'pointer-events-none');
+          nav.classList.add('opacity-100');
+      } else {
+          nav.classList.remove('opacity-100');
+          nav.classList.add('opacity-0', 'pointer-events-none');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      checkNavBar();
+
+      const navbar = document.querySelector("#navbar");
+      const hamburgerButton = document.querySelector("#hamburger");
+      const mobileMenu = document.querySelector("#mobile-menu");
+      hamburgerButton.addEventListener("click", function() {
+          navbar.classList.toggle("is-open");
+      });
+      let mobileMenuLinks = Array.from(mobileMenu.querySelectorAll('a'));
+
+      mobileMenuLinks.push(document.querySelector("#navbar-save-the-date"));
+      mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navbar.classList.remove("is-open");
+        });
+    });
+    });
+</script>

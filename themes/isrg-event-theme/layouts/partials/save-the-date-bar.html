@@ -6,3 +6,30 @@
     Save the Date
   </button>
 </div>
+
+<script>
+
+window.addEventListener('scroll', function() {
+    const form = document.querySelector('#form');
+    const saveTheDateBar = document.querySelector('#save-the-date-bar');
+
+    // Get the position of the form from the top of the page
+    const formPosition = form.getBoundingClientRect().top + window.pageYOffset + 20;
+
+    // Get the current scroll position
+    const scrollPosition = window.pageYOffset;
+
+    // Get the viewport height
+    const viewportHeight = window.innerHeight;
+
+    // Hide the bar if the form is in view
+    if (scrollPosition + viewportHeight > formPosition) {
+      saveTheDateBar.classList.remove("opacity-100");
+      saveTheDateBar.classList.add("opacity-0", "pointer-events-none");
+    } else {
+      saveTheDateBar.classList.remove("opacity-0", "pointer-events-none");
+      saveTheDateBar.classList.add("opacity-100");
+    }
+});
+
+</script>
