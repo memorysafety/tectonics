@@ -692,6 +692,7 @@ video {
 
 .type-speaker-bio a {
   text-decoration-line: underline;
+  text-underline-offset: 2px;
 }
 
 .type-form-optional {
@@ -840,6 +841,21 @@ video {
   opacity: 1;
 }
 
+.type-footer {
+  font-family: DM Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.type-footer a {
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -938,6 +954,10 @@ video {
   margin-bottom: 25px;
 }
 
+.mb-\[40px\] {
+  margin-bottom: 40px;
+}
+
 .mb-\[66px\] {
   margin-bottom: 66px;
 }
@@ -1014,6 +1034,10 @@ video {
   height: 100%;
 }
 
+.max-h-\[55px\] {
+  max-height: 55px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1026,8 +1050,12 @@ video {
   width: 100%;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[360px\] {
+  max-width: 360px;
 }
 
 .max-w-\[50\%\] {
@@ -1242,11 +1270,6 @@ video {
   padding: 0.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1259,6 +1282,10 @@ video {
 
 .py-10 {
   padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.pb-10 {
   padding-bottom: 2.5rem;
 }
 
@@ -1312,12 +1339,20 @@ video {
   line-height: 1.25rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-normal {
   font-weight: 400;
 }
 
 .leading-4 {
   line-height: 1rem;
+}
+
+.leading-\[1\.8\] {
+  line-height: 1.8;
 }
 
 .tracking-\[0\.21em\] {
@@ -1410,6 +1445,10 @@ html {
     margin-bottom: 25vh;
   }
 
+  .sm\:mb-\[40px\] {
+    margin-bottom: 40px;
+  }
+
   .sm\:ml-0 {
     margin-left: 0px;
   }
@@ -1420,6 +1459,10 @@ html {
 
   .sm\:max-w-full {
     max-width: 100%;
+  }
+
+  .sm\:basis-1\/2 {
+    flex-basis: 50%;
   }
 
   .sm\:basis-\[145px\] {
@@ -1434,17 +1477,24 @@ html {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:items-end {
+    align-items: flex-end;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
+  }
+
   .sm\:border-r {
     border-right-width: 1px;
   }
 
   .sm\:to-60\% {
     --tw-gradient-to-position: 60%;
-  }
-
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 
   .sm\:pr-20 {
@@ -1505,12 +1555,5 @@ html {
 
   .md\:pr-10 {
     padding-right: 2.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 }

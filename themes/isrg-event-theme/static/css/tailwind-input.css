@@ -69,7 +69,7 @@
   }
 
   .type-speaker-bio a {
-    @apply underline;
+    @apply underline underline-offset-2;
   }
 
   .type-form-optional {
@@ -122,6 +122,14 @@
 
   .is-open #mobile-menu {
     @apply opacity-100 max-h-[500px] pointer-events-auto;
+  }
+
+  .type-footer {
+    @apply antialiased font-dmsans font-normal text-base leading-6 tracking-[0.03em];
+  }
+
+  .type-footer a {
+    @apply underline underline-offset-2;
   }
 }
 
