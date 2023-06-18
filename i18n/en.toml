@@ -78,7 +78,7 @@ other = "Please provide a valid email."
 other = "You must agree to ISRG's terms to submit."
 
 [form_post_endpoint]
-other = "http://outreach.abetterinternet.org/l/1011011/2023-06-07/hbhj"
+other = "https://outreach.abetterinternet.org/l/1011011/2023-06-07/hbhj"
 
 [venue_eyebrow]
 other = "Venue"
