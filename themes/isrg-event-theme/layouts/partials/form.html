@@ -13,22 +13,18 @@
     <p class="type-hero-description mt-2" > {{ i18n "form_description" | markdownify }} </p>
 
     <div class="mt-4">
-
       <input type="text" id="First Name" name="First Name" class="ui-form-text-field" required />
       <label for="fname" class="type-form-label" >{{ i18n "form_field_firstname" }}</label >
     </div>
     <div class="mt-4">
-
       <input type="text" id="Last Name" name="Last Name" class="ui-form-text-field" required />
       <label for="lname" class="type-form-label" >{{ i18n "form_field_lastname" }}</label >
     </div>
     <div class="mt-4">
-
       <input type="email" id="email" name="email" class="ui-form-text-field" required />
       <label for="email" class="type-form-label" >{{ i18n "form_field_email" }}</label >
     </div>
     <div class="mt-4">
-
       <input type="text" id="Company" name="Company" class="ui-form-text-field" />
       <label for="company" class="type-form-label" >{{ i18n "form_field_company" }}</label >
       <span class="type-form-optional" >{{ i18n "form_field_optional" }}</span >
@@ -49,31 +45,18 @@
 </section>
 
 <script>
-
-  document.getElementById('First Name').value = "Testfname";
-  document.getElementById('Last Name').value = "Testlname"
-  document.getElementById('email').value = "testemail@testemail.com"
-  document.getElementById('Company').value = "Test Company"
-  document.getElementById('agree').checked = true
-
   const form = document.getElementById("registrationForm");
 
   form.addEventListener('submit', function(event) {
-    const currentDomain = window.location.origin;
-    return false;
-
     validateForm(event);
   });
 
   function validateForm(event) {
-
-    // Get form values
     const firstName = document.getElementById('First Name').value;
     const lastName = document.getElementById('Last Name').value;
     const email = document.getElementById('email').value;
     const agree = document.getElementById('agree').checked;
 
-    // Check for empty fields
     if (!firstName || !lastName) {
       showError('{{ i18n "form_validation_error_name" }}');
       return false;
@@ -87,62 +70,11 @@
       return false;
     }
 
-    // Validate email
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       showError('Please provide a valid email.');
       return;
     }
-
-    // If everything is valid, run the success function
-    formSuccess();
-
-  // Add submit event listener
-}
-
-function formSuccess() {
-  // Function to handle successful form submission
-  console.log('Form submitted successfully.');
-}
-
-
-
-  function submitToDB() {
-    const formData = new FormData(form);
-    const formEndpoint = form.getAttribute("action");
-
-    fetch(formEndpoint, {
-      method: "POST",
-      body: formData,
-      mode: 'no-cors'
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          showThankYouMessage();
-        } else {
-          showError(data.message);
-        }
-      })
-      .catch((error) => {
-        showError("An error occurred while submitting the form.");
-      });
-  }
-
-  function showThankYouMessage() {
-    const formContainer = document.getElementById("registrationForm");
-    const thankYouMessage = document.getElementById("thank-you-container");
-
-    // Using Animate.css
-    formContainer.classList.add("animate__animated", "animate__fadeOut");
-
-    setTimeout(function(){
-      formContainer.innerHTML = "";
-      thankYouMessage.classList.add("animate__animated", "animate__fadeIn");
-      thankYouMessage.classList.remove("hidden");
-    },350)
-
-
   }
 
   function showError(message) {
@@ -150,9 +82,5 @@ function formSuccess() {
     errorMessage.innerText = message;
     errorMessage.style.display = "block";
   }
-
-
-
-
 </script>
 </div>

@@ -75,7 +75,7 @@ other = "Return to event page"
 other = "An error occured during submission. Please contact us at "
 
 [submission_error_email]
-other = "email@email.com"
+other = "donate@abetterinternet.org"
 
 [form_validation_error_name]
 other = "Please enter your first and last name."
