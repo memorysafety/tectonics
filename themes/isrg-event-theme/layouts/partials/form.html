@@ -5,7 +5,7 @@
   <h2 class="type-hero-title mb-[14px]" > {{ i18n "form_title" }} </h2>
 
 
-  <form action="{{ i18n "form_post_endpoint" }}" id="registrationForm">
+  <form action="{{ i18n "form_post_endpoint" }}" method="post" id="registrationForm">
     <div style="position:absolute; left:-9999px; top: -9999px;">
       <label for="pardot_extra_field">Comments</label>
       <input type="text" id="pardot_extra_field" name="pardot_extra_field">
@@ -43,41 +43,29 @@
 
     <div class="my-4">
       <button type="submit" class="btn-primary mb-5"> {{ i18n "form_field_submit" }} </button>
-      <button type="button" onClick="triggerTestError()" class="btn-primary ml-5 mb-5">Trigger error </button>
-      <button type="button" onClick="showThankYouMessage()" class="btn-primary ml-5 mb-5">Trigger submission </button>
     </div>
 
   </form>
-
-  <div id="thank-you-container" class="hidden">
-    <div class="type-heading-2 mb-5">{{ i18n "form_thank_you_title" }} </div>
-    <div class="type-hero-description mb-[25px]">{{ i18n "form_thank_you_description" }} </div>
-    <a href="/ical/tectonics-event.ics" download class="btn-primary">{{ i18n "form_thank_you_calendar_button" }}</a>
-  </div>
 </section>
 
 <script>
 
-document.getElementById('First Name').value = "Testfname";
-    document.getElementById('Last Name').value = "Testlname"
-    document.getElementById('email').value = "testemail@testemail.com"
-    document.getElementById('Company').value = "Test Company"
-     document.getElementById('agree').checked = true
-
-
+  document.getElementById('First Name').value = "Testfname";
+  document.getElementById('Last Name').value = "Testlname"
+  document.getElementById('email').value = "testemail@testemail.com"
+  document.getElementById('Company').value = "Test Company"
+  document.getElementById('agree').checked = true
 
   const form = document.getElementById("registrationForm");
 
-  function triggerTestError() {
-    showError('{{ i18n "form_validation_error_email" }}');
-  }
-
   form.addEventListener('submit', function(event) {
+    const currentDomain = window.location.origin;
+    return false;
+
     validateForm(event);
   });
 
   function validateForm(event) {
-    event.preventDefault();
 
     // Get form values
     const firstName = document.getElementById('First Name').value;
@@ -88,15 +76,15 @@ document.getElementById('First Name').value = "Testfname";
     // Check for empty fields
     if (!firstName || !lastName) {
       showError('{{ i18n "form_validation_error_name" }}');
-      return;
+      return false;
     }
     if (!email) {
       showError('{{ i18n "form_validation_error_email" }}');
-      return;
+      return false;
     }
     if (!agree) {
       showError('{{ i18n "form_validation_error_agree" }}');
-      return;
+      return false;
     }
 
     // Validate email
@@ -115,7 +103,6 @@ document.getElementById('First Name').value = "Testfname";
 function formSuccess() {
   // Function to handle successful form submission
   console.log('Form submitted successfully.');
-  submitToDB();
 }
 
 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body class="bg-dark-green text-white">
+    <div class="min-h-screen flex flex-col">
+      <div class="bg-dark-green">
+        <div class="container ">
+          <div class="px-5">
+            <img class="block mt-[40px] mb-[80px] sm:mb-[25vh]" src="/images/prossimo-logo.png" alt="Prossimo Logo" />
+            <div class="mb-[120px]">
+                <div class="type-heading-2 mb-5">{{ i18n "submission_error_message" }} <a href="mailto:{{ i18n "submission_error_email" }}">{{ i18n "submission_error_message" }}</a>.</div>
+                <br />
+                <br />
+                <a href="/" class="btn-primary">{{ i18n "form_thank_you_return_text" }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{- partial "footer.html" . -}}
+    </div>
+  </body>
+</html>

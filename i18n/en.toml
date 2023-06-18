@@ -68,6 +68,15 @@ other = "We'll begin sending invites in the coming weeks"
 [form_thank_you_calendar_button]
 other = "Download .ics file"
 
+[form_thank_you_return_text]
+other = "Return to event page"
+
+[submission_error_message]
+other = "An error occured during submission. Please contact us at "
+
+[submission_error_email]
+other = "email@email.com"
+
 [form_validation_error_name]
 other = "Please enter your first and last name."
 
