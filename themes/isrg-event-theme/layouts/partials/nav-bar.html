@@ -25,15 +25,15 @@
 
         </div>
         <div class="hidden md:ml-6 md:flex md:space-x-8">
-          <a href="#venue" class="top-nav-item">Venue</a>
-          <a href="#keynotes" class="top-nav-item">Keynotes</a>
-          <a href="#schedule" class="top-nav-item">Schedule</a>
-          <a href="#sponsors" class="top-nav-item">Sponsors</a>
+          <a href="#{{ i18n "venue_title" | urlize }}" class="top-nav-item">{{ i18n "venue_title" }}</a>
+          <a href="#{{ (i18n "speakers_title") | urlize }}" class="top-nav-item">{{ i18n "speakers_title" }}</a>
+          <a href="#{{ i18n "schedule_title" | urlize }}" class="top-nav-item">{{ i18n "schedule_title" }}</a>
+          <a href="#{{ i18n "sponsor_title" | urlize }}" class="top-nav-item">{{ i18n "sponsor_title" }}</a>
         </div>
         <div class="flex items-center">
           <div class="flex-shrink-0">
             <a id="navbar-save-the-date" href="#save-the-date" class="relative inline-flex items-center btn-primary">
-              Save the Date
+              {{ i18n "form_cta" }}
             </a>
           </div>
 
@@ -43,10 +43,10 @@
 
     <div class="md:hidden" id="mobile-menu">
       <div class="space-y-1 pb-3 pt-2">
-        <a href="#venue" class="hamburger-nav-item">Venue</a>
-        <a href="#keynotes" class="hamburger-nav-item">Keynotes</a>
-        <a href="#schedule" class="hamburger-nav-item">Schedule</a>
-        <a href="#sponsors" class="hamburger-nav-item">Sponsors</a>
+        <a href="#{{ i18n "venue_title" | urlize }}" class="hamburger-nav-item">{{ i18n "venue_title" }}</a>
+        <a href="#{{ (i18n "speakers_title") | urlize }}" class="hamburger-nav-item">{{ i18n "speakers_title" }}</a>
+        <a href="#{{ i18n "schedule_title" | urlize }}" class="hamburger-nav-item">{{ i18n "schedule_title" }}</a>
+        <a href="#{{ i18n "sponsor_title" | urlize }}" class="hamburger-nav-item">{{ i18n "sponsor_title" }}</a>
       </div>
     </div>
   </nav>

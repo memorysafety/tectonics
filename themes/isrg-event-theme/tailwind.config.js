@@ -6,6 +6,7 @@ module.exports = {
     content: ["./layouts/**/*.html"],
     safelist: [
       "whitespace-nowrap",
+      "sticky"
     ]
   },
   theme: {

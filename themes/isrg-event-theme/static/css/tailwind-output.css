@@ -884,6 +884,10 @@ video {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1193,6 +1197,10 @@ video {
   overflow: auto;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .whitespace-nowrap {
   white-space: nowrap;
 }
@@ -1323,6 +1331,10 @@ video {
 
 .pt-\[5vh\] {
   padding-top: 5vh;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
 }
 
 .text-center {
@@ -1511,6 +1523,14 @@ html {
 
   .sm\:pt-\[10vh\] {
     padding-top: 10vh;
+  }
+
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:pt-\[50px\] {
+    padding-top: 50px;
   }
 }
 

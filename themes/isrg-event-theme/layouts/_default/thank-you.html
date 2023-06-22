@@ -3,25 +3,37 @@
   {{ partial "head.html" . }}
 
   <body class="bg-dark-green text-white">
-    <div class="min-h-screen flex flex-col">
-      <div class="bg-dark-green">
-        <div class="container ">
-          <div class="px-5">
-            <a href="/">
-              <img class="block mt-[40px] mb-[80px] sm:mb-[25vh]" src="/images/prossimo-logo.png" alt="Prossimo Logo" />
-            </a>
-            <div id="thank-you-container" class="mb-[120px]">
-                <div class="type-heading-2 mb-5">{{ i18n "form_thank_you_title" }} </div>
-                <div class="type-hero-description mb-[25px]">{{ i18n "form_thank_you_description" }} </div>
-                <a href="/ical/tectonics-event.ics" download class="btn-primary">{{ i18n "form_thank_you_calendar_button" }}</a>
-                <br />
-                <br />
-                <a href="/" class="btn-primary">{{ i18n "form_thank_you_return_text" }}</a>
-            </div>
-          </div>
-        </div>
+    <div class="min-h-screen flex flex-col relative overflow-hidden">
+      <div id="video-bg-container" class="absolute top-0 left-0 w-full z-10">
+        <a name="tectonics"></a>
+        <video class="hero-video w-full" playsinline autoplay muted loop>
+          <source src="/video/plateh264.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
+      <section class="hero bg-center pt-[5vh] pb-2.5 sm:pt-[10vh] z-20 relative bg-gradient-to-b from-transparent min-h-screen to-dark-green to-40% sm:to-60% md:to-90%">
+        <div class="container mx-auto px-5">
+          <img class="block mb-[80px] sm:mb-[25vh]" src="/images/prossimo-logo.png" alt="Prossimo Logo" />
+          <div id="thank-you-container" class="mb-[120px]">
+            <div class="type-heading-2 mb-5">{{ i18n "form_thank_you_title" }} </div>
+            <div class="type-hero-description mb-[25px]">{{ i18n "form_thank_you_description" }} </div>
+            <a href="/ical/tectonics-event.ics" download class="btn-primary">{{ i18n "form_thank_you_calendar_button" }}</a>
+            <br />
+            <br />
+            <a href="/" class="btn-primary">{{ i18n "form_thank_you_return_text" }}</a>
+        </div>
+        </div>
+      </section>
+
       {{- partial "footer.html" . -}}
     </div>
   </body>
 </html>
+
+
+
+
+
+
+
+

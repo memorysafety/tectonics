@@ -29,6 +29,9 @@ In a day-long convening, practitioners, policy-makers, and technical leaders wil
 [form_title]
 other = "Save the date"
 
+[form_cta]
+other = "Save the date"
+
 [form_description]
 other = "Sign up here to get an email when registration opens. Space at this event will be limited, so we will do our best to accommodate interest!"
 
@@ -63,7 +66,7 @@ other = "Submit"
 other = "Thank you for your interest in joining us at Tectonics"
 
 [form_thank_you_description]
-other = "We'll begin sending invites in the coming weeks"
+other = "Registration will open later this summer. We’ll send you an email with more information at that time."
 
 [form_thank_you_calendar_button]
 other = "Download .ics file"
@@ -111,8 +114,11 @@ other = "1625 POST STREET, SAN FRANCISCO, CALIFORNIA 94115"
 [venue_googlemaps_url]
 other = "https://www.google.com/maps/place/Hotel+Kabuki+-+JDV+by+Hyatt/@37.7855773,-122.4289389,15z/data=!4m2!3m1!1s0x0:0xf94d52700baf31ae?sa=X&ved=2ahUKEwiPz9ep44v_AhVBADQIHfDdC-cQ_BJ6BAh3EAc"
 
+[venue_title]
+other = "Venue"
+
 [speakers_title]
-other = "Keynotes"
+other = "Featured Speakers"
 
 [schedule_title]
 other = "Schedule"
