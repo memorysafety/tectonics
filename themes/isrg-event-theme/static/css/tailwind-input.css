@@ -39,6 +39,14 @@
     @apply antialiased font-dmsans font-normal text-base leading-6 tracking-[0.12em];
   }
 
+  .general-link-style {
+    @apply underline underline-offset-4;
+  }
+
+  .type-hero-description a {
+    @apply general-link-style;
+  }
+
 
 
   .type-speaker-name {

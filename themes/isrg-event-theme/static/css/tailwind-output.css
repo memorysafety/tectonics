@@ -623,6 +623,11 @@ video {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.type-hero-description a {
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+
 .type-speaker-name {
   font-family: DM Sans, sans-serif;
   font-size: 12px;
@@ -928,6 +933,16 @@ video {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .-ml-2 {
@@ -1333,10 +1348,6 @@ video {
   padding-top: 5vh;
 }
 
-.pt-\[50px\] {
-  padding-top: 50px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -1513,6 +1524,10 @@ html {
     --tw-gradient-to-position: 60%;
   }
 
+  .sm\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
   .sm\:pr-20 {
     padding-right: 5rem;
   }
@@ -1523,10 +1538,6 @@ html {
 
   .sm\:pt-\[10vh\] {
     padding-top: 10vh;
-  }
-
-  .sm\:pb-10 {
-    padding-bottom: 2.5rem;
   }
 
   .sm\:pt-\[50px\] {

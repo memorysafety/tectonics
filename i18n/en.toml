@@ -125,3 +125,12 @@ other = "Schedule"
 
 [sponsor_title]
 other = "Sponsors"
+
+[sponsor_note]
+other = "Sponsoring Tectonics highlights your organization’s leadership in moving the Internet towards a more secure future. To become a sponsor, email"
+
+[sponsor_email]
+other = "sponsor@abetterinternet.org"
+
+[prospectus_download_text]
+other = "Sponsorship Prospectus"
