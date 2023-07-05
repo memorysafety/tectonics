@@ -1,0 +1,11 @@
+{
+  "name": "isrg-hugo-event-theme",
+  "version": "1.0.0",
+  "scripts": {
+    "tailwind:build": "npx tailwindcss -i ./static/css/tailwind-input.css -o ./static/css/tailwind-output.css",
+    "tailwind:watch": "npx tailwindcss -i ./static/css/tailwind-input.css -o ./static/css/tailwind-output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

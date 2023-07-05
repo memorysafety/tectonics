@@ -1,0 +1,11 @@
+# theme.toml template for a Hugo theme
+
+name = "Isrg Event Theme"
+description = ""
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "ISRG"
+  homepage = "https://abetterinternet.org/"

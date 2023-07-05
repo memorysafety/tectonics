@@ -1,0 +1,35 @@
+<div id="save-the-date-bar" class="transition-opacity fixed bottom-0 opacity-100 left-0 w-full text-center pt-4 pb-2 md:hidden bg-gradient-to-b from-transparent to-dark-green to-20% z-50">
+  <button
+    class="btn-primary"
+    onclick="document.getElementById('form').scrollIntoView({ behavior: 'smooth' })"
+  >
+    Save the Date
+  </button>
+</div>
+
+<script>
+
+window.addEventListener('scroll', function() {
+    const form = document.querySelector('#form');
+    const saveTheDateBar = document.querySelector('#save-the-date-bar');
+
+    // Get the position of the form from the top of the page
+    const formPosition = form.getBoundingClientRect().top + window.pageYOffset + 20;
+
+    // Get the current scroll position
+    const scrollPosition = window.pageYOffset;
+
+    // Get the viewport height
+    const viewportHeight = window.innerHeight;
+
+    // Hide the bar if the form is in view
+    if (scrollPosition + viewportHeight > formPosition) {
+      saveTheDateBar.classList.remove("opacity-100");
+      saveTheDateBar.classList.add("opacity-0", "pointer-events-none");
+    } else {
+      saveTheDateBar.classList.remove("opacity-0", "pointer-events-none");
+      saveTheDateBar.classList.add("opacity-100");
+    }
+});
+
+</script>

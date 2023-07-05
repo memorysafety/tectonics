@@ -1,0 +1,20 @@
+<section>
+  <a class="offset-scroll-position-for-fixed-header" name="{{ i18n "sponsor_title" | urlize }}"></a>
+  <h2 class="type-hero-title mb-[66px]">{{ i18n "sponsor_title" }}</h2>
+  <!-- <div class="grid grid-cols-2 sm:grid-cols-3 gap-[40px]">
+    {{ range .Site.Data.sponsors }}
+    <a href="{{ .website }}">
+      <img
+        target="_blank"
+        rel="noopener"
+        src="/sponsors/{{ .logo }}"
+        alt="{{ .name }}"
+      />
+    </a>
+    {{ end }}
+  </div> -->
+  <p class="type-hero-description my-10">
+    {{ i18n "sponsor_note"}} <a href="mailto:{{ i18n "sponsor_email" }}">{{ i18n "sponsor_email" }}</a>.
+  </p>
+  <a href="/pdf/Memory Safety Event Prospectus.pdf" class="btn-primary">{{ i18n "prospectus_download_text" }}</a>
+</section>

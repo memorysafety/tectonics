@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .type-venue-name {
+    @apply antialiased font-dmsans font-normal text-base leading-6 tracking-[0.21em] uppercase;
+  }
+  .type-schedule-time {
+    @apply antialiased font-dmsans font-normal text-[17px] leading-[22px] tracking-[0.21em];
+  }
+  .type-schedule-meridiem {
+    @apply antialiased font-dmsans font-normal text-[13px] leading-[17px] tracking-[0.21em];
+  }
+
+  .type-venue-description,
+  .type-hero-description,
+  .type-speaker-bio {
+    @apply antialiased font-dmsans font-normal text-base leading-6 tracking-[0.03em];
+  }
+
+  .type-venue-description p,
+  .type-hero-description p {
+    @apply mb-[25px];
+  }
+
+  .type-venue-link {
+    @apply antialiased font-dmsans font-normal text-sm leading-[1.6] tracking-[0.08em] underline underline-offset-4;
+  }
+
+  .type-heading-2 {
+    @apply antialiased font-dmsans font-bold text-[22px] leading-[29px];
+  }
+  .type-hero-title {
+    @apply antialiased font-dmsans font-bold text-[68px] leading-[89px];
+  }
+
+  .type-schedule-name {
+    @apply antialiased font-dmsans font-normal text-base leading-6 tracking-[0.12em];
+  }
+
+  .general-link-style {
+    @apply underline underline-offset-4;
+  }
+
+  .type-hero-description a {
+    @apply general-link-style;
+  }
+
+
+
+  .type-speaker-name {
+    @apply antialiased font-dmsans text-[12px] leading-[16px] tracking-[0.21em] uppercase font-medium;
+  }
+
+  .type-speaker-job-title {
+    @apply antialiased font-dmsans font-normal text-[10px] leading-[13px] tracking-[0.21em] uppercase;
+  }
+  .type-speaker-company {
+    @apply antialiased font-dmsans font-normal text-[10px] leading-[13px] tracking-[0.21em] uppercase;
+  }
+
+  .type-speaker-name {
+
+  }
+
+  .type-form-label {
+    @apply antialiased font-dmsans font-normal text-[12px] leading-4 tracking-[0.21em] uppercase;
+  }
+
+  .type-hero-eyebrow {
+    @apply uppercase font-dmsans font-normal text-sm leading-[15px] tracking-[0.21em];
+  }
+
+  .type-speaker-bio {
+    @apply antialiased font-dmsans font-normal text-[12px] leading-[16px] tracking-[0.03em];
+  }
+
+  .type-speaker-bio a {
+    @apply underline underline-offset-2;
+  }
+
+  .type-form-optional {
+    @apply antialiased font-dmsans font-normal text-[10px] leading-[13px] tracking-[0.1em];
+  }
+
+
+  .ui-form-text-field {
+    @apply antialiased mt-1 block w-full border-b mb-[3px] border-white bg-transparent text-white text-[20px] leading-[2] font-bold focus:border-white focus:ring focus:ring-white focus:ring-opacity-50
+  }
+
+  .ui-speaker-photo {
+    @apply rounded-[55px];
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 border border-white rounded-md shadow-sm text-sm font-medium bg-transparent hover:bg-[rgba(255,255,255,.1)] focus:outline-none focus:ring-1 focus:ring-offset-0 focus:ring-white;
+  }
+
+  .top-nav-item {
+    @apply inline-flex items-center border-t-2  border-transparent px-1 pb-1 text-sm font-medium text-white hover:border-gray-300;
+  }
+
+  .top-nav-item-current {
+    @apply border-white border-b-4 pb-0;
+  }
+
+  .hamburger-nav-item {
+    @apply block border-l-4 border-transparent py-2 pl-3 pr-4 text-base  text-white hover:border-gray-300  sm:pl-5 sm:pr-6;
+  }
+
+  .scroll-destination {
+      scroll-padding-top: 50px;
+  }
+
+  #navbar #hamburger-to-open,
+  #navbar.is-open #hamburger-to-close {
+    @apply block;
+  }
+
+  #navbar.is-open #hamburger-to-open,
+  #navbar #hamburger-to-close {
+    @apply hidden;
+  }
+
+  #mobile-menu {
+    @apply max-h-0 opacity-0 overflow-hidden pb-8 pointer-events-none;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+  }
+
+  .is-open #mobile-menu {
+    @apply opacity-100 max-h-[500px] pointer-events-auto;
+  }
+
+  .type-footer {
+    @apply antialiased font-dmsans font-normal text-base leading-6 tracking-[0.03em];
+  }
+
+  .type-footer a {
+    @apply underline underline-offset-2;
+  }
+}
+
+
+:root {
+  --heightOfStickyHeader: 70px;
+}
+.offset-scroll-position-for-fixed-header {
+  /* Offset scroll distance for on-page links due to sticky nav */
+  padding-top: var(--heightOfStickyHeader);
+  margin-top: calc(var(--heightOfStickyHeader) * -1);
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,33 @@
+<div id="scroll-indicator" class="transition-opacity fixed bottom-0 left-0 w-full text-center hidden md:block opacity-100 bg-gradient-to-b from-transparent to-dark-green to-50% py-1 z-50">
+    <span class="text-2xl">⌄</span>
+</div>
+
+<script>
+window.addEventListener('scroll', function() {
+    const scrollIndicator = document.querySelector('#scroll-indicator');
+    const offset = 60;
+
+    // Show the indicator at the top of the page only
+    if (window.pageYOffset < offset) {
+        scrollIndicator.classList.remove('opacity-0', 'pointer-events-none');
+        scrollIndicator.classList.add('opacity-100');
+    } else {
+        scrollIndicator.classList.remove('opacity-100');
+        scrollIndicator.classList.add('opacity-0', 'pointer-events-none');
+    }
+});
+</script>
+
+<style>
+@keyframes bounce {
+    0%   { transform: scale(1,1)    translateY(0); }
+    3%  { transform: scale(1.1,.9) translateY(0); }
+    9%  { transform: scale(.9,1.1) translateY(3px); }
+    12%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+#scroll-indicator span {
+    display: block;
+    animation: bounce 4s ease infinite;
+}
+</style>
