@@ -569,7 +569,7 @@ video {
   .type-hero-description,
   .type-speaker-bio {
   font-family: DM Sans, sans-serif;
-  font-size: 1rem;
+  font-size: 17px;
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
@@ -582,13 +582,21 @@ video {
   margin-bottom: 25px;
 }
 
+.type-link-block {
+  font-family: DM Sans, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .type-venue-link {
   font-family: DM Sans, sans-serif;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
   font-weight: 400;
-  line-height: 1.6;
-  letter-spacing: 0.08em;
   text-decoration-line: underline;
   text-underline-offset: 4px;
   -webkit-font-smoothing: antialiased;
@@ -930,19 +938,14 @@ video {
   margin-right: auto;
 }
 
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-10 {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .-ml-2 {

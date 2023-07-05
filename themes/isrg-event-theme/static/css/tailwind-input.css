@@ -16,7 +16,7 @@
   .type-venue-description,
   .type-hero-description,
   .type-speaker-bio {
-    @apply antialiased font-dmsans font-normal text-base leading-6 tracking-[0.03em];
+    @apply antialiased font-dmsans font-normal text-[17px] leading-6 tracking-[0.03em];
   }
 
   .type-venue-description p,
@@ -24,8 +24,11 @@
     @apply mb-[25px];
   }
 
+  .type-link-block {
+    @apply antialiased font-dmsans font-normal text-[12px] leading-[1.4] tracking-[0.08em] underline underline-offset-4;
+  }
   .type-venue-link {
-    @apply antialiased font-dmsans font-normal text-sm leading-[1.6] tracking-[0.08em] underline underline-offset-4;
+    @apply antialiased font-dmsans font-normal underline underline-offset-4;
   }
 
   .type-heading-2 {
