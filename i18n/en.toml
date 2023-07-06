@@ -89,6 +89,9 @@ other = "Please provide a valid email."
 [form_validation_error_agree]
 other = "You must agree to ISRG's terms to submit."
 
+[form_validation_error_company]
+other = "Please enter your organization."
+
 [form_post_endpoint]
 other = "https://outreach.abetterinternet.org/l/1011011/2023-06-07/hbhj"
 
@@ -105,7 +108,7 @@ other = "San Francisco"
 other = """
 Blending modern Asian and Western influences, Hotel Kabuki offers a unique neighborhood experience in the heart of San Francisco.
 
-With its stunning Asian-influenced design, Hotel Kabuki wraps guests in comfort and exceptional service
+With its stunning Asian-influenced design, Hotel Kabuki wraps guests in comfort and exceptional service.
 """
 
 [venue_address]

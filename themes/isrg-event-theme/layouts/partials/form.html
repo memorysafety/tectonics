@@ -24,9 +24,8 @@
       <label for="email" class="type-form-label" >{{ i18n "form_field_email" }}</label >
     </div>
     <div class="mt-4">
-      <input type="text" id="Company" name="Company" class="ui-form-text-field" />
+      <input type="text" id="Company" name="Company" class="ui-form-text-field" required />
       <label for="company" class="type-form-label" >{{ i18n "form_field_company" }}</label >
-      <span class="type-form-optional" >{{ i18n "form_field_optional" }}</span >
     </div>
     <div class="mt-4">
       <input type="checkbox" id="agree" required />
@@ -53,6 +52,7 @@
   function validateForm(event) {
     const firstName = document.getElementById('First Name').value;
     const lastName = document.getElementById('Last Name').value;
+    const company = document.getElementById('Company').value;
     const email = document.getElementById('email').value;
     const agree = document.getElementById('agree').checked;
 
@@ -66,6 +66,10 @@
     }
     if (!agree) {
       showError('{{ i18n "form_validation_error_agree" }}');
+      return false;
+    }
+    if (!company) {
+      showError('{{ i18n "form_validation_error_company" }}');
       return false;
     }
 
