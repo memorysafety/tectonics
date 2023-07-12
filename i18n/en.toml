@@ -17,13 +17,21 @@ other = "November 2 2023"
 other = "San Francisco"
 
 [hero_subhead]
-other = "A Fundamental Shift Toward <span class='whitespace-nowrap'>Memory Safety</span>"
+other = "A big shift towards <span class='whitespace-nowrap'>memory safety</span>"
 
 [hero_description]
 other = """
-In relatively short order, the topic of memory safety has gained momentum from being an “objectively crazy” problem to one that is being solved. Join ISRG as it brings together a small group of leaders paving the way towards a more memory safe Internet.
+In relatively short order, the topic of memory safety has gained momentum from being viewed as an unrealistic endeavor to one that is being solved. Join ISRG as it brings together a small group of leaders paving the way towards a more memory safe Internet.
 
-In a day-long convening, practitioners, policy-makers, and technical leaders will gather to not only discuss a range of topics related to accelerating memory safety, but will use structured time to set a clear, actionable path for moving our work forward.
+In a day-long convening, practitioners, technical leaders, and policy-makers will gather to dive into a 2.0 conversation about improving memory safety, moving beyond the basic issues of its importance to focus on how we can get to a more memory safe future, faster. Working group discussion topics will include:
+
+<ul class='type-hero-description'>
+<li>Adoption of memory safe languages in operating systems</li>
+<li>Dependency management</li>
+<li>Organizational roadmaps for deploying memory safe software</li>
+</ul>
+
+Through proctored conversations, the end result of Tectonics will be clear and actionable recommendations that Prossimo will publish and distribute.
 """
 
 [form_title]
@@ -125,6 +133,9 @@ other = "Featured Speakers"
 
 [schedule_title]
 other = "Schedule"
+
+[schedule_note]
+other = "Agenda and further details forthcoming. Save the date to be kept up to date."
 
 [sponsor_title]
 other = "Sponsors"

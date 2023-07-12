@@ -5,3 +5,6 @@ title = "Tectonics: A Fundamental Shift Toward Memory Safety"
 
 [params]
 # cssOverrides = ["css/event-specific-overrides.css"] # if needed
+
+[markup.goldmark.renderer]
+unsafe= true

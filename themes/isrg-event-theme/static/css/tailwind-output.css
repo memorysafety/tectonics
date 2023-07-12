@@ -636,6 +636,12 @@ video {
   text-underline-offset: 4px;
 }
 
+ul.type-hero-description {
+  margin-bottom: 1.25rem;
+  list-style-type: disc;
+  padding-left: 1.25rem;
+}
+
 .type-speaker-name {
   font-family: DM Sans, sans-serif;
   font-size: 12px;
@@ -706,16 +712,6 @@ video {
 .type-speaker-bio a {
   text-decoration-line: underline;
   text-underline-offset: 2px;
-}
-
-.type-form-optional {
-  font-family: DM Sans, sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 13px;
-  letter-spacing: 0.1em;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .ui-form-text-field {

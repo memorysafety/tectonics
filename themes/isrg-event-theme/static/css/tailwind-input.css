@@ -50,6 +50,10 @@
     @apply general-link-style;
   }
 
+  ul.type-hero-description {
+    @apply list-disc pl-5 mb-5;
+  }
+
 
 
   .type-speaker-name {
