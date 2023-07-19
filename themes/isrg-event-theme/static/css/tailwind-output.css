@@ -1519,6 +1519,10 @@ html {
     margin-left: 0px;
   }
 
+  .sm\:mb-\[80px\] {
+    margin-bottom: 80px;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1619,6 +1623,10 @@ html {
 
   .md\:max-w-\[50\%\] {
     max-width: 50%;
+  }
+
+  .md\:max-w-\[75\%\] {
+    max-width: 75%;
   }
 
   .md\:flex-row {
