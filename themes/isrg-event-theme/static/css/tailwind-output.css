@@ -839,7 +839,7 @@ ul.type-hero-description {
   pointer-events: none;
   max-height: 0px;
   overflow: hidden;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   opacity: 0;
   transition: max-height 0.5s ease, opacity 0.5s ease;
 }
@@ -881,6 +881,10 @@ ul.type-hero-description {
   pointer-events: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -907,6 +911,10 @@ ul.type-hero-description {
 
 .top-0 {
   top: 0px;
+}
+
+.top-\[60px\] {
+  top: 60px;
 }
 
 .z-10 {
@@ -1283,6 +1291,10 @@ ul.type-hero-description {
   --tw-gradient-to-position: 50%;
 }
 
+.to-30\% {
+  --tw-gradient-to-position: 30%;
+}
+
 .bg-center {
   background-position: center;
 }
@@ -1335,6 +1347,10 @@ ul.type-hero-description {
   padding-bottom: 120px;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1345,6 +1361,26 @@ ul.type-hero-description {
 
 .pt-\[5vh\] {
   padding-top: 5vh;
+}
+
+.pt-\[96px\] {
+  padding-top: 96px;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1459,6 +1495,10 @@ html {
     position: sticky;
   }
 
+  .sm\:top-0 {
+    top: 0px;
+  }
+
   .sm\:float-none {
     float: none;
   }
@@ -1517,6 +1557,18 @@ html {
 
   .sm\:border-r {
     border-right-width: 1px;
+  }
+
+  .sm\:bg-transparent {
+    background-color: transparent;
+  }
+
+  .sm\:bg-gradient-to-t {
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  }
+
+  .sm\:bg-none {
+    background-image: none;
   }
 
   .sm\:to-60\% {

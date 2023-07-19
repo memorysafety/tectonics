@@ -1,4 +1,4 @@
-<nav id="navbar" class="transition-opacity opacity-100 from-transparent to-dark-green to-20% text-white z-50 fixed top-0 w-full">
+<nav id="navbar" class="transition-opacity opacity-100 bg-gradient-to-t sm:bg-none from-transparent to-dark-green to-20% text-white z-50 fixed top-0 w-full">
     <div class="mx-auto px-5">
       <div class="flex h-16 justify-between">
         <div class="flex">
@@ -42,7 +42,7 @@
     </div>
 
     <div class="md:hidden" id="mobile-menu">
-      <div class="space-y-1 pb-3 pt-2">
+      <div class="space-y-1 pb-14 pt-2">
         <a href="#{{ i18n "venue_title" | urlize }}" class="hamburger-nav-item">{{ i18n "venue_title" }}</a>
         <a href="#{{ (i18n "speakers_title") | urlize }}" class="hamburger-nav-item">{{ i18n "speakers_title" }}</a>
         <a href="#{{ (i18n "schedule_title") | urlize }}" class="hamburger-nav-item">{{ i18n "schedule_title" }}</a>
@@ -64,16 +64,17 @@
 
       // Show the nav unless at the top of the page
       if (window.pageYOffset > offset) {
-          // nav.classList.remove('opacity-0', 'pointer-events-none');
-          // nav.classList.add('opacity-100');
+          // Nav fully visible
           logo.classList.remove('opacity-0', 'pointer-events-none');
           logo.classList.add('opacity-100');
-          // nav.classList.remove('opacity-0', 'pointer-events-none');
           nav.classList.add('bg-gradient-to-t');
+          nav.classList.remove('sm:bg-none');
         } else {
+          // Nav at top of page
+
           logo.classList.add('opacity-0', 'pointer-events-none');
           logo.classList.remove('opacity-100');
-          nav.classList.remove('bg-gradient-to-t');
+          nav.classList.add('bg-gradient-to-t','sm:bg-none');
           // nav.classList.remove('opacity-100');
           // nav.classList.add('opacity-0', 'pointer-events-none');
       }
