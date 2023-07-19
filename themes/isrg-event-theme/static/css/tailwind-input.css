@@ -131,7 +131,7 @@
   }
 
   #mobile-menu {
-    @apply max-h-0 opacity-0 overflow-hidden pb-8 pointer-events-none;
+    @apply max-h-0 opacity-0 overflow-hidden pb-4 pointer-events-none;
     transition: max-height 0.5s ease, opacity 0.5s ease;
   }
 
