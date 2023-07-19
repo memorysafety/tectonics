@@ -25,3 +25,19 @@
     </div>
   </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      let video = document.querySelector('video');
+      let counter = 1;
+      video.addEventListener('timeupdate', function() {
+          if (Math.floor(video.currentTime) >= Math.floor(video.duration)-1) {
+              if (counter === 2) {
+                  video.pause();
+              } else {
+                  video.currentTime = 0;
+                  counter++;
+              }
+          }
+      });
+  });
+</script>
