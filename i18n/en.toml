@@ -131,11 +131,35 @@ other = "Venue"
 [speakers_title]
 other = "Featured Speakers"
 
+[approach_nav_title]
+other = "Approach"
+
+[approach_title]
+other = "Our Approach"
+
+[approach_description]
+other = """
+We’re taking an approach intended to foster the most productive possible discussions about various topics we’ve set forth.
+
+The people we’re gathering are, with few or no exceptions, already familiar with the basics of memory safety and the conversation around it. We will not rehash the basics, instead we will focus on moving the conversation forward. Moderators will start each track with pre-populated notes covering many of the basics so we can iterate and improve on previous discussions.
+
+Participants will rank track options in order of preference in advance of the convening, primarily so that participation in each track can be balanced and of manageable size. A primary and secondary track will be assigned day-of.
+
+Each track will be structured around a set of questions and prompts. When track discussion time starts, participants will go to the table for their track.
+
+Each track will have a moderator. The moderator will keep the group on track, select speakers, and ensure equitable speaking time.
+
+Each track will also have a note taker. The note taker will be building an outline for a final report during the discussion. This outline will be visible to all participants on a screen.
+
+In the weeks after the event, the reports from each track will be completed and published via a blog post. Their contents will be used to help guide the development and adoption of memory safe software industry-wide, including Prossimo’s work going forward.
+
+"""
+
 [schedule_title]
-other = "Schedule"
+other = "Agenda"
 
 [schedule_note]
-other = "Agenda and further details forthcoming. Save the date to be kept up to date."
+other = "Note: This is a draft agenda; speakers and topics will be finalized closer to the event."
 
 [sponsor_title]
 other = "Sponsors"
