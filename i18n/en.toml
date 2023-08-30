@@ -162,10 +162,10 @@ other = "Agenda"
 other = "Note: This is a draft agenda; speakers and topics will be finalized closer to the event."
 
 [sponsor_title]
-other = "Sponsors"
+other = "Funders"
 
 [sponsor_note]
-other = "Sponsoring Tectonics highlights your organization’s leadership in moving the Internet towards a more secure future. To become a sponsor, email"
+other = "Funding Tectonics highlights your organization’s leadership in moving the Internet towards a more secure future. To become a funder, email"
 
 [sponsor_email]
 other = "sponsor@abetterinternet.org"
