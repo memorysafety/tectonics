@@ -1414,6 +1414,10 @@ ul.type-hero-description {
   font-weight: 400;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-4 {
   line-height: 1rem;
 }
