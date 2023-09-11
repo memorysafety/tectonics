@@ -45,7 +45,7 @@ other = "Register"
 other = "Register"
 
 [form_description]
-other = "Sign up here to get an email when registration opens. Space at this event will be limited, so we will do our best to accommodate interest!"
+other = ""
 
 [form_field_firstname]
 other = "First Name"
