@@ -39,10 +39,10 @@ Through proctored conversations, the end result of Tectonics will be clear and a
 """
 
 [form_title]
-other = "Save the date"
+other = "Register"
 
 [form_cta]
-other = "Save the date"
+other = "Register"
 
 [form_description]
 other = "Sign up here to get an email when registration opens. Space at this event will be limited, so we will do our best to accommodate interest!"
