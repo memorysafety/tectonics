@@ -147,10 +147,6 @@
     @apply underline underline-offset-2;
   }
 
-  .bg-split-white-dark-green {
-    background: linear-gradient(90deg, rgba(1,40,42,1) 0%, rgba(1,40,42,1) 50%, rgba(1,40,42,1) 50%, rgba(1,40,42,1) 100%);
-  }
-
   .col-for-form {
     @apply ml-[-20px] mr-[-20px] mb-5 pl-5 pr-5 md:ml-0 md:mr-0 md:mb-0;
   }

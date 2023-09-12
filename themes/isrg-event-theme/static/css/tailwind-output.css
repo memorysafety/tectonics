@@ -1479,12 +1479,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (min-width: 768px) {
-  .md\:bg-split-white-dark-green {
-    background: linear-gradient(90deg, rgba(1,40,42,1) 0%, rgba(1,40,42,1) 50%, rgba(1,40,42,1) 50%, rgba(1,40,42,1) 100%);
-  }
-}
-
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
