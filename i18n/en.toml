@@ -26,22 +26,26 @@ In relatively short order, the topic of memory safety has gained momentum from b
 In a day-long convening, practitioners, technical leaders, and policy-makers will gather to dive into a 2.0 conversation about improving memory safety, moving beyond the basic issues of its importance to focus on how we can get to a more memory safe future, faster. Working group discussion topics will include:
 
 <ul class='type-hero-description'>
-<li>Adoption of memory safe languages in operating systems</li>
-<li>Dependency management</li>
-<li>Organizational roadmaps for deploying memory safe software</li>
+<li>Facilitating adoption of memory safe code for Internet critical infrastructure</li>
+<li>Facilitating the adoption of memory safe code in industry</li>
+<li>Memory safety roadmaps for organizations</li>
+<li>Rust: Facilitating the inclusion of packages in operating systems</li>
+<li>Rust: Facilitating adoption in cryptography</li>
+<li>Rust: Facilitating adoption in the embedded space</li>
+<li>Rust: Improving trust in dependency trees</li>
 </ul>
 
 Through proctored conversations, the end result of Tectonics will be clear and actionable recommendations that Prossimo will publish and distribute.
 """
 
 [form_title]
-other = "Save the date"
+other = "Register"
 
 [form_cta]
-other = "Save the date"
+other = "Register"
 
 [form_description]
-other = "Sign up here to get an email when registration opens. Space at this event will be limited, so we will do our best to accommodate interest!"
+other = ""
 
 [form_field_firstname]
 other = "First Name"
@@ -114,7 +118,7 @@ other = "San Francisco"
 
 [venue_description]
 other = """
-Blending modern Asian and Western influences, Hotel Kabuki offers a unique neighborhood experience in the heart of San Francisco.
+Blending modern Asian and Western influences, [Hotel Kabuki](https://www.jdvhotels.com/hotels/california/san-francisco/hotel-kabuki) offers a unique neighborhood experience in the heart of San Francisco.
 
 With its stunning Asian-influenced design, Hotel Kabuki wraps guests in comfort and exceptional service.
 """

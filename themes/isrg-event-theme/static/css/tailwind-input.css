@@ -146,6 +146,10 @@
   .type-footer a {
     @apply underline underline-offset-2;
   }
+
+  .col-for-form {
+    @apply ml-[-20px] mr-[-20px] mb-5 pl-5 pr-5 md:ml-0 md:mr-0 md:mb-0;
+  }
 }
 
 
