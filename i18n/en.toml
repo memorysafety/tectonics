@@ -132,8 +132,8 @@ other = "https://www.google.com/maps/place/Hotel+Kabuki+-+JDV+by+Hyatt/@37.78557
 [venue_title]
 other = "Venue"
 
-[speakers_title]
-other = "Featured Speakers"
+[attendees_title]
+other = "Notable Attendees"
 
 [approach_nav_title]
 other = "Approach"
