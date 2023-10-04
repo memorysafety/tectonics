@@ -1,6 +1,12 @@
 - name: Ford Foundation
   logo: logo-ford-foundation.png
   website: https://www.fordfoundation.org/
+- name: Google
+  logo: google-logo.png
+  website: https://www.google.com/
 - name: tweede golf
   logo: tweede-golf-logo.png
   website: https://tweedegolf.nl/en
+- name: Heroku
+  logo: heroku-logo.png
+  website: https://heroku.com
