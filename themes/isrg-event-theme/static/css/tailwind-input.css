@@ -27,6 +27,7 @@
   .type-link-block {
     @apply antialiased font-dmsans font-normal text-[12px] leading-[1.4] tracking-[0.08em] underline underline-offset-4;
   }
+  .venue_additional_details a,
   .type-venue-link {
     @apply antialiased font-dmsans font-normal underline underline-offset-4;
   }
