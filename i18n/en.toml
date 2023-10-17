@@ -122,6 +122,23 @@ Blending modern Asian and Western influences, [Hotel Kabuki](https://www.jdvhote
 With its stunning Asian-influenced design, Hotel Kabuki wraps guests in comfort and exceptional service.
 """
 
+[venue_additional_details]
+other = """
+**Hotel Enso** *book by October 18, 2023*
+
+[Click here to reserve a room at the Hotel Enso](https://www.ihg.com/kimptonhotels/hotels/us/en/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qIta=99801505&icdv=99801505&qSlH=SFOBC&qCiD=01&qCiMy=102023&qCoD=03&qCoMy=102023&qGrpCd=TET&qAAR=6CBARC&qRtP=6CBARC&setPMCookies=true&qSHBrC=KI&qDest=1800%20Sutter%20Street,%20San%20Francisco,%20CA,%20US&srb_u=1&qRmFltr=).
+
+Hotel Enso is a three-minute walk to Hotel Kabuki where Tectonics will be held.
+
+**Hotel Kabuki** *book by October 18, 2023*
+
+[Click here to reserve a room at the Kabuki](https://www.hyatt.com/en-US/hotel/california/jdv-hotel-kabuki/sfojd?corp_id=128309).
+
+When booking, please follow the instructions below provided by the hotel:
+
+*Select "Book Now" in the top right. From there please select your dates and the rate will be populated in the options that appear. You may see other offers that appear to be a lower rate, but those will require full prepayment of the reservation with no allowance for cancellations, changes or refunds.*
+"""
+
 [venue_address]
 other = "1625 POST STREET, SAN FRANCISCO, CALIFORNIA 94115"
 
