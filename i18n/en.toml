@@ -28,8 +28,7 @@ In a day-long convening, practitioners, technical leaders, and policy-makers wil
 <ul class='type-hero-description'>
 <li>Facilitating adoption of memory safe code for Internet critical infrastructure</li>
 <li>Memory safety roadmaps for organizations</li>
-<li>Developing memory safe media and compression libraries.</li>
-<li>Facilitating the inclusion of Rust packages in operating systems</li>
+<li>Facilitating the inclusion of Rust in operating systems</li>
 <li>Improving trust in Rust dependency trees</li>
 </ul>
 
