@@ -21,7 +21,7 @@
   event: "Lunch"
 - time: "12:30"
   meridiem: "PM"
-  event: "Keynote #3 and Moderated Q&A: Doug Gregor, Distinguished Engineer, Apple"
+  event: "Keynote & Moderated Q&A: Doug Gregor, Distinguished Engineer, Apple"
 - time: "1:00"
   meridiem: "PM"
   event: "Track Working Group Time"
