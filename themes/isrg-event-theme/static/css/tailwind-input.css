@@ -38,9 +38,16 @@
   .type-hero-title {
     @apply antialiased font-dmsans font-bold text-[68px] leading-[89px];
   }
+  .type-hero-title-h3 {
+    @apply antialiased font-dmsans font-bold text-[40px] leading-[62px];
+  }
 
   .type-schedule-name {
     @apply antialiased font-dmsans font-normal text-base leading-6 tracking-[0.12em];
+  }
+
+  .type-schedule-name em {
+    @apply text-[#bbb] text-[12px] tracking-[0.12px] font-normal ml-3;
   }
 
   .general-link-style {
@@ -150,6 +157,16 @@
 
   .col-for-form {
     @apply ml-[-20px] mr-[-20px] mb-5 pl-5 pr-5 md:ml-0 md:mr-0 md:mb-0;
+  }
+
+  .bodytext-tracks {
+    @apply antialiased font-dmsans font-normal text-[17px] leading-6 tracking-[0.03em];
+  }
+  .bodytext-tracks h4 {
+    @apply font-bold text-[24px] leading-[32px] mt-10 mb-2.5;
+  }
+  .bodytext-tracks ul {
+    @apply list-disc pl-5 mt-2.5;
   }
 }
 

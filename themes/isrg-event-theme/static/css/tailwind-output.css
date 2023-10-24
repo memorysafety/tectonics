@@ -622,6 +622,15 @@ video {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.type-hero-title-h3 {
+  font-family: DM Sans, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 62px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .type-schedule-name {
   font-family: DM Sans, sans-serif;
   font-size: 1rem;
@@ -630,6 +639,15 @@ video {
   letter-spacing: 0.12em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.type-schedule-name em {
+  margin-left: 0.75rem;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.12px;
+  --tw-text-opacity: 1;
+  color: rgb(187 187 187 / var(--tw-text-opacity));
 }
 
 .type-hero-description a {
@@ -822,20 +840,28 @@ ul.type-hero-description {
   text-underline-offset: 2px;
 }
 
-.col-for-form {
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-bottom: 1.25rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+.bodytext-tracks {
+  font-family: DM Sans, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.03em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 768px) {
-  .col-for-form {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-  }
+.bodytext-tracks h4 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.625rem;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.bodytext-tracks ul {
+  margin-top: 0.625rem;
+  list-style-type: disc;
+  padding-left: 1.25rem;
 }
 
 .sr-only {
@@ -1065,10 +1091,6 @@ ul.type-hero-description {
   flex-grow: 0;
 }
 
-.basis-1\/2 {
-  flex-basis: 50%;
-}
-
 .basis-\[100\%\] {
   flex-basis: 100%;
 }
@@ -1116,10 +1138,6 @@ ul.type-hero-description {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-col-reverse {
-  flex-direction: column-reverse;
 }
 
 .items-end {
@@ -1538,10 +1556,6 @@ html {
     max-width: 75%;
   }
 
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -1550,10 +1564,6 @@ html {
 
   .md\:to-90\% {
     --tw-gradient-to-position: 90%;
-  }
-
-  .md\:pl-20 {
-    padding-left: 5rem;
   }
 
   .md\:pr-10 {
