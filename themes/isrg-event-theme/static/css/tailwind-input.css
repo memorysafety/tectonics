@@ -47,7 +47,7 @@
   }
 
   .type-schedule-name em {
-    @apply text-[#bbb] text-[12px] tracking-[0.12px] font-normal ml-3;
+    @apply text-[#bbb] text-[12px] tracking-[0.12px] font-normal  inline-block;
   }
 
   .general-link-style {
