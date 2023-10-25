@@ -199,7 +199,7 @@ other = "Getting to Tectonics"
 other = """
 <strong>By Car:</strong> Hotel Kabuki is connected to the Japan Center parking garage. The parking garage entrance is on Webster St. Valet parking is not available.
 
-<strong>By Transit:</strong> Hotel Kabuki is close to the 38/38R ADD BART.
+<strong>By Transit:</strong> Hotel Kabuki is close to the 38/38R.
 """
 
 
@@ -230,7 +230,7 @@ Leaders: Sudhi Herle, Arlie Davis
 * What issues might operating systems like Linux distributions, Windows, and Android face, and how can we alleviate them?
 
 #### Improving trust in Rust dependency trees
-Leaders: Dirkjan Ochtman, Florian Gilcher?
+Leaders: Dirkjan Ochtman, Florian Gilcher
 
 * Rust has large dependency trees that necessitate trusting too many different maintainers.
 * Can we find ways to make trusting dependencies easier?
