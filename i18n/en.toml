@@ -190,3 +190,49 @@ other = "sponsor@abetterinternet.org"
 
 [prospectus_download_text]
 other = "Sponsorship Prospectus"
+
+
+[gettingthere_title]
+other = "Getting to Tectonics"
+
+[gettingthere_body]
+other = """
+<strong>By Car:</strong> Hotel Kabuki is connected to the Japan Center parking garage. The parking garage entrance is on Webster St. Valet parking is not available.
+
+<strong>By Transit:</strong> Hotel Kabuki is close to the 38/38R.
+"""
+
+
+[tracks_title]
+other = "Track Working Group Details"
+
+[tracks_body]
+other = """
+The goal for each working group is to come up with action items to pursue after the event. There may be some overlap in ideas and action items between groups, that’s fine!
+
+#### Facilitating adoption of memory safe code for Internet critical infrastructure
+Leaders: Alex Gaynor, Paul Kehrer
+
+* How can we facilitate the adoption of memory safe code for the Internet’s critical infrastructure?
+* What issues might deployments of TLS, DNS, NTP, BGP, and web-facing servers and proxies face, and how can we alleviate them?
+
+#### Memory safety roadmaps for organizations
+Leaders: Bob Lord
+
+* What should memory safety roadmaps for organizations look like?
+* How can we convince companies to produce them?
+* Who should sign them and what kind of accountability should be involved?
+
+#### Facilitating the inclusion of Rust in operating systems
+Leaders: Sudhi Herle, Arlie Davis
+
+* How can we facilitate the adoption of Rust packages in operating systems?
+* What issues might operating systems like Linux distributions, Windows, and Android face, and how can we alleviate them?
+
+#### Improving trust in Rust dependency trees
+Leaders: Dirkjan Ochtman, Florian Gilcher
+
+* Rust has large dependency trees that necessitate trusting too many different maintainers.
+* Can we find ways to make trusting dependencies easier?
+* Can we reduce the size of dependency trees?
+"""
