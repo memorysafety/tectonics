@@ -191,7 +191,6 @@ other = "sponsor@abetterinternet.org"
 [prospectus_download_text]
 other = "Sponsorship Prospectus"
 
-
 [gettingthere_title]
 other = "Getting to Tectonics"
 
@@ -201,7 +200,6 @@ other = """
 
 <strong>By Transit:</strong> Hotel Kabuki is close to the 38/38R.
 """
-
 
 [tracks_title]
 other = "Track Working Group Details"
