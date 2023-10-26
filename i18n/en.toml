@@ -217,7 +217,7 @@ Leaders: Alex Gaynor, Paul Kehrer
 * What issues might deployments of TLS, DNS, NTP, BGP, and web-facing servers and proxies face, and how can we alleviate them?
 
 #### Memory safety roadmaps for organizations
-Leaders: Bob Lord
+Leaders: Bob Lord, Eric Mill
 
 * What should memory safety roadmaps for organizations look like?
 * How can we convince companies to produce them?
