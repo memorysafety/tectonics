@@ -1,6 +1,6 @@
 - time: "8:00"
-  meridiem: "AM"
   event: "Breakfast and Mingling"
+  meridiem: "AM"
 - time: "9:00"
   meridiem: "AM"
   event: "Welcome and open remarks from Josh Aas, head of the Prossimo project"
@@ -33,4 +33,4 @@
   event: "Track Working Group Time *see details below*"
 - time: "4:00"
   meridiem: "PM"
-  event: "Concluding Remarks"
+  event: "Concluding Remarks: Fiona Krakenbürger"
