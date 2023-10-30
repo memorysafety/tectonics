@@ -864,6 +864,46 @@ ul.type-hero-description {
   padding-left: 1.25rem;
 }
 
+.backdrop {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.backdrop-bg {
+  background-image: url(/images/TectonicsBG.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.backdrop-h1 {
+  font-family: DM Sans, sans-serif;
+  font-size: 222px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.backdrop-h2 {
+  margin-top: 5rem;
+  font-family: DM Sans, sans-serif;
+  font-size: 29px;
+  text-transform: uppercase;
+  letter-spacing: 6.09px;
+}
+
+.backdrop-h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  font-family: DM Sans, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3.78px;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1023,6 +1063,10 @@ ul.type-hero-description {
   margin-top: 1.5rem;
 }
 
+.mt-\[-40px\] {
+  margin-top: -40px;
+}
+
 .mt-\[40px\] {
   margin-top: 40px;
 }
@@ -1083,16 +1127,16 @@ ul.type-hero-description {
   width: 100%;
 }
 
+.max-w-\[1280px\] {
+  max-width: 1280px;
+}
+
 .max-w-\[300px\] {
   max-width: 300px;
 }
 
 .max-w-\[360px\] {
   max-width: 360px;
-}
-
-.max-w-screen-2xl {
-  max-width: 1536px;
 }
 
 .max-w-screen-lg {
@@ -1152,6 +1196,10 @@ ul.type-hero-description {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1174,6 +1222,10 @@ ul.type-hero-description {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-\[12px\] {

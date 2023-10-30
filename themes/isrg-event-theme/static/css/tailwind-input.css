@@ -168,6 +168,30 @@
   .bodytext-tracks ul {
     @apply list-disc pl-5 mt-2.5;
   }
+
+  .backdrop {
+    @apply text-center pt-[94px] pb-[94px];
+  }
+
+  .backdrop-bg {
+    background-image: url(/images/TectonicsBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    min-width: 100%;
+  }
+
+  .backdrop-h1 {
+    @apply font-dmsans text-[222px] font-bold leading-[1];
+  }
+  .backdrop-h2 {
+    @apply font-dmsans text-[29px] mt-20 tracking-[6.09px] uppercase;
+  }
+  .backdrop-h3 {
+    @apply font-dmsans text-[18px] tracking-[3.78px] mt-10 mb-5 uppercase;
+  }
 }
 
 
