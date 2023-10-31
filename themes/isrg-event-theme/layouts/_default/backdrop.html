@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" . }}
+
+  <body class="bg-dark-green text-white backdrop-video-bg">
+
+    <div class="min-h-screen flex flex-col relative overflow-hidden">
+      <div id="video-bg-container" class="fixed inset-0 z-1 overflow-hidden object-cover min-w-full min-h-full w-auto h-auto">
+        <a name="tectonics"></a>
+        <video class="object-cover min-w-full min-h-full w-auto h-auto" playsinline autoplay muted loop>
+          <source src="/video/plateh264.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div id="video-mask" class="fixed inset-0 z-1 overflow-hidden object-cover bg-dark-green min-w-full min-h-full w-auto h-auto" style="opacity: .73;">
+      </div>
+
+
+        <div class="backdrop flex flex-col z-10 relative">
+            <div>
+                <figure>
+                    <img srcset="/images/Prossimo-Logo.png 1x, /images/Prossimo-Logo@2x.png 2x"
+                         sizes="(min-width: 768px) 50vw, 100vw"
+                         src="/images/ISRG-Logo.png"
+                         class="block mx-auto"
+                         alt="Tectonics Background">
+                </figure>
+
+
+            </div>
+            <div>
+                <h2 class="backdrop-h2">Welcome To</h2>
+                <h1 class="backdrop-h1">Tectonics</h1>
+            </div>
+            <div>
+                <h3 class="backdrop-h3">Presented By</h3>
+                <figure>
+                    <img srcset="/images/ISRG-Logo.png 1x, /images/ISRG-Logo@2x.png 2x"
+                         sizes="(min-width: 768px) 50vw, 100vw"
+                         src="/images/ISRG-Logo.png"
+                         class="block mx-auto"
+                         alt="Tectonics Background">
+                </figure>
+            </div>
+            <div>
+                <h3 class="backdrop-h3">Sponsored By</h3>
+                <div class="mt-[-40px] grid grid-cols-4 gap-[40px] mx-auto justify-between justify-items-center items-center max-w-[1280px]">
+                    {{ range .Site.Data.sponsors }}
+                    <a target="_blank" rel="noopener" href="{{ .website }}">
+                      <img
+                        class="logo-for-{{ .name }}"
+                        src="/sponsors/{{ .logo }}"
+                        alt="{{ .name }}"
+                      />
+                    </a>
+                    {{ end }}
+                  </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+

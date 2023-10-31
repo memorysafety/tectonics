@@ -864,6 +864,40 @@ ul.type-hero-description {
   padding-left: 1.25rem;
 }
 
+.backdrop {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.backdrop-h1 {
+  font-family: DM Sans, sans-serif;
+  font-size: 222px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.backdrop-h2 {
+  margin-top: 5rem;
+  font-family: DM Sans, sans-serif;
+  font-size: 29px;
+  text-transform: uppercase;
+  letter-spacing: 6.09px;
+}
+
+.backdrop-h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  font-family: DM Sans, sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 3.78px;
+}
+
+.backdrop .logo-for-tweede {
+  filter: invert(1) grayscale(1) brightness(10);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -898,6 +932,10 @@ ul.type-hero-description {
 
 .sticky {
   position: sticky;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .bottom-0 {
@@ -1023,6 +1061,10 @@ ul.type-hero-description {
   margin-top: 1.5rem;
 }
 
+.mt-\[-40px\] {
+  margin-top: -40px;
+}
+
 .mt-\[40px\] {
   margin-top: 40px;
 }
@@ -1063,12 +1105,20 @@ ul.type-hero-description {
   height: 1.5rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
 
 .max-h-\[55px\] {
   max-height: 55px;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .min-h-screen {
@@ -1079,8 +1129,20 @@ ul.type-hero-description {
   width: 1.5rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-full {
   width: 100%;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.max-w-\[1280px\] {
+  max-width: 1280px;
 }
 
 .max-w-\[300px\] {
@@ -1089,10 +1151,6 @@ ul.type-hero-description {
 
 .max-w-\[360px\] {
   max-width: 360px;
-}
-
-.max-w-screen-2xl {
-  max-width: 1536px;
 }
 
 .max-w-screen-lg {
@@ -1152,6 +1210,10 @@ ul.type-hero-description {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1174,6 +1236,10 @@ ul.type-hero-description {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-\[12px\] {
