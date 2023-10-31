@@ -192,6 +192,10 @@
   .backdrop-h3 {
     @apply font-dmsans text-[18px] tracking-[3.78px] mt-10 mb-5 uppercase;
   }
+
+  .backdrop .logo-for-tweede {
+    filter: invert(1) grayscale(1) brightness(10);
+  }
 }
 
 

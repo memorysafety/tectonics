@@ -2,9 +2,21 @@
 <html lang="en">
   {{ partial "head.html" . }}
 
-  <body class="bg-dark-green text-white backdrop-bg">
+  <body class="bg-dark-green text-white backdrop-video-bg">
+
     <div class="min-h-screen flex flex-col relative overflow-hidden">
-        <div class="backdrop flex flex-col">
+      <div id="video-bg-container" class="fixed inset-0 z-1 overflow-hidden object-cover min-w-full min-h-full w-auto h-auto">
+        <a name="tectonics"></a>
+        <video class="object-cover min-w-full min-h-full w-auto h-auto" playsinline autoplay muted loop>
+          <source src="/video/plateh264.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div id="video-mask" class="fixed inset-0 z-1 overflow-hidden object-cover bg-dark-green min-w-full min-h-full w-auto h-auto" style="opacity: .73;">
+      </div>
+
+
+        <div class="backdrop flex flex-col z-10 relative">
             <div>
                 <figure>
                     <img srcset="/images/Prossimo-Logo.png 1x, /images/Prossimo-Logo@2x.png 2x"
@@ -36,6 +48,7 @@
                     {{ range .Site.Data.sponsors }}
                     <a target="_blank" rel="noopener" href="{{ .website }}">
                       <img
+                        class="logo-for-{{ .name }}"
                         src="/sponsors/{{ .logo }}"
                         alt="{{ .name }}"
                       />

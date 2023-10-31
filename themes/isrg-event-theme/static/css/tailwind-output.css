@@ -870,16 +870,6 @@ ul.type-hero-description {
   text-align: center;
 }
 
-.backdrop-bg {
-  background-image: url(/images/TectonicsBG.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-  min-width: 100%;
-}
-
 .backdrop-h1 {
   font-family: DM Sans, sans-serif;
   font-size: 222px;
@@ -902,6 +892,10 @@ ul.type-hero-description {
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 3.78px;
+}
+
+.backdrop .logo-for-tweede {
+  filter: invert(1) grayscale(1) brightness(10);
 }
 
 .sr-only {
@@ -938,6 +932,10 @@ ul.type-hero-description {
 
 .sticky {
   position: sticky;
+}
+
+.inset-0 {
+  inset: 0px;
 }
 
 .bottom-0 {
@@ -1107,12 +1105,20 @@ ul.type-hero-description {
   height: 1.5rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
 
 .max-h-\[55px\] {
   max-height: 55px;
+}
+
+.min-h-full {
+  min-height: 100%;
 }
 
 .min-h-screen {
@@ -1123,8 +1129,16 @@ ul.type-hero-description {
   width: 1.5rem;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-full {
   width: 100%;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-\[1280px\] {
